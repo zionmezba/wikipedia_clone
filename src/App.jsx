@@ -9,6 +9,7 @@ import EventDemo from "./components/EventDemo";
 import Counter from "./components/Counter";
 import Profile from "./components/Profile";
 import ShoppingList from "./components/ShoppingList";
+import CopyInput from "./components/CopyInput";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
             <CiShoppingCart />
             <Profile />
             <ShoppingList />
+            <CopyInput />
             <MainContent />
             <EventDemo />
             <Footer />

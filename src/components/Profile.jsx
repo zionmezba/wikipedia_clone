@@ -15,9 +15,11 @@ const Profile = () => {
 
     const submitForm = (event) => {
         event.preventDefault();
-        setProfiles([...profiles, { name: name, age: age }]);
-        setName("");
-        setAge("");
+        if (name.trim() && age.trim()) {
+            setProfiles([...profiles, { name: name, age: age }]);
+            setName("");
+            setAge("");
+        }
     }
 
     return (

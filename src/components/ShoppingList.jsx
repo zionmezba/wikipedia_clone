@@ -15,9 +15,11 @@ const ShoppingList = () => {
 
     const formSubmit = (event) => {
         event.preventDefault();
-        setItems([...items, { name: name, quantity: quantity }]);
-        setName("");
-        setQuantity("");
+        if (name.trim() && quantity.trim()) {
+            setItems([...items, { name: name, quantity: quantity }]);
+            setName("");
+            setQuantity("");
+        }
     }
     return (
         <div>
