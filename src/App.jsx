@@ -10,6 +10,7 @@ import Counter from "./components/Counter";
 import Profile from "./components/Profile";
 import ShoppingList from "./components/ShoppingList";
 import CopyInput from "./components/CopyInput";
+import CounterEffect from "./components/CounterEffect";
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
             <Profile />
             <ShoppingList />
             <CopyInput />
+            <CounterEffect />
             <MainContent />
             <EventDemo />
             <Footer />
