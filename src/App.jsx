@@ -7,6 +7,8 @@ import WelcomeMessage from "./components/WelcomeMessage";
 import { CiShoppingCart } from "react-icons/ci";
 import EventDemo from "./components/EventDemo";
 import Counter from "./components/Counter";
+import Profile from "./components/Profile";
+import ShoppingList from "./components/ShoppingList";
 
 const App = () => {
     return (
@@ -15,6 +17,8 @@ const App = () => {
             <Header />
             <Counter />
             <CiShoppingCart />
+            <Profile />
+            <ShoppingList />
             <MainContent />
             <EventDemo />
             <Footer />
