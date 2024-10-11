@@ -13,6 +13,7 @@ import CopyInput from "./components/CopyInput";
 import CounterEffect from "./components/CounterEffect";
 import UserProfile from "./components/UserProfile";
 import { UserProvider } from "./UserContext";
+import CounterReducer from "./components/CounterReducer";
 
 const App = () => {
     return (<UserProvider>
@@ -21,6 +22,7 @@ const App = () => {
         <Header />
         <Counter />
         <CiShoppingCart />
+        <CounterReducer />
         <ShoppingList />
         <Profile />
         <CopyInput />
