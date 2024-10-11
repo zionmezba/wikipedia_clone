@@ -16,7 +16,7 @@ const CounterEffect = () => {
         <div>
             <h1>Todo List</h1>
             {
-                todo.slice(0, 3).map((todo) => (
+                todo.slice(0, 1).map((todo) => (
                     <div key={todo.id}>
                         <h1>{todo.title}</h1>
                         <p>{todo.body}</p>

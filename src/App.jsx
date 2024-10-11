@@ -11,22 +11,24 @@ import Profile from "./components/Profile";
 import ShoppingList from "./components/ShoppingList";
 import CopyInput from "./components/CopyInput";
 import CounterEffect from "./components/CounterEffect";
+import UserProfile from "./components/UserProfile";
+import { UserProvider } from "./UserContext";
 
 const App = () => {
-    return (
-        <>
-            <WelcomeMessage />
-            <Header />
-            <Counter />
-            <CiShoppingCart />
-            <Profile />
-            <ShoppingList />
-            <CopyInput />
-            <CounterEffect />
-            <MainContent />
-            <EventDemo />
-            <Footer />
-        </>
+    return (<UserProvider>
+        <UserProfile />
+        <WelcomeMessage />
+        <Header />
+        <Counter />
+        <CiShoppingCart />
+        <ShoppingList />
+        <Profile />
+        <CopyInput />
+        <CounterEffect />
+        <MainContent />
+        <EventDemo />
+        <Footer />
+    </UserProvider>
     );
 };
 
